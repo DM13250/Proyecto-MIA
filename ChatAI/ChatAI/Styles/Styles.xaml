@@ -1,0 +1,57 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<!-- Degradado de fondo -->
+	<LinearGradientBrush x:Key="BackgroundGradient" StartPoint="0,0" EndPoint="1,1">
+		<GradientStop Color="#344655" Offset="0"/>
+		<GradientStop Color="#407863" Offset="0.5"/>
+		<GradientStop Color="#438268" Offset="1"/>
+	</LinearGradientBrush>
+
+	<!-- Estilo para aplicar el degradado al fondo de la ventana -->
+	<Style x:Key="MainWindowStyle" TargetType="Window">
+		<Setter Property="Background" Value="{StaticResource BackgroundGradient}"/>
+	</Style>
+
+
+	<!-- Estilo para Button con bordes redondos -->
+	<Style x:Key="RoundedButtonStyle" TargetType="Button">
+		<Setter Property="Background" Value="#4CAF50"/>
+		<Setter Property="BorderBrush" Value="#4CAF50"/>
+		<Setter Property="BorderThickness" Value="1"/>
+		<Setter Property="Padding" Value="5,2"/>
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="Button">
+					<Border Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            CornerRadius="5">
+						<ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+					</Border>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+
+	<!-- Estilo para TextBox con bordes redondos -->
+	<Style x:Key="RoundedTextBoxStyle" TargetType="TextBox">
+		<Setter Property="Background" Value="#80FFFFFF"/>
+		<Setter Property="BorderBrush" Value="Gray"/>
+		<Setter Property="BorderThickness" Value="1"/>
+		<Setter Property="Padding" Value="2"/>
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="TextBox">
+					<Border Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            CornerRadius="10">
+						<ScrollViewer x:Name="PART_ContentHost" 
+                                      Margin="0" 
+                                      Focusable="False"/>
+					</Border>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+</ResourceDictionary>

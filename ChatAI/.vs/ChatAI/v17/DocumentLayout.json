@@ -1,0 +1,322 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ADMIN\\Desktop\\DAM\\ChatAI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C7B3DD3C-53C8-493D-B0BF-4A57BAF536FC}|ChatAI\\ChatAI.csproj|c:\\users\\admin\\desktop\\dam\\chatai\\chatai\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{C7B3DD3C-53C8-493D-B0BF-4A57BAF536FC}|ChatAI\\ChatAI.csproj|solutionrelative:chatai\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7B3DD3C-53C8-493D-B0BF-4A57BAF536FC}|ChatAI\\ChatAI.csproj|c:\\users\\admin\\desktop\\dam\\chatai\\chatai\\converters\\booltomessagetailmarginconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7B3DD3C-53C8-493D-B0BF-4A57BAF536FC}|ChatAI\\ChatAI.csproj|solutionrelative:chatai\\converters\\booltomessagetailmarginconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7B3DD3C-53C8-493D-B0BF-4A57BAF536FC}|ChatAI\\ChatAI.csproj|c:\\users\\admin\\desktop\\dam\\chatai\\chatai\\converters\\booltomessagetailconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7B3DD3C-53C8-493D-B0BF-4A57BAF536FC}|ChatAI\\ChatAI.csproj|solutionrelative:chatai\\converters\\booltomessagetailconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7B3DD3C-53C8-493D-B0BF-4A57BAF536FC}|ChatAI\\ChatAI.csproj|c:\\users\\admin\\desktop\\dam\\chatai\\chatai\\converters\\booltotextalignmentconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7B3DD3C-53C8-493D-B0BF-4A57BAF536FC}|ChatAI\\ChatAI.csproj|solutionrelative:chatai\\converters\\booltotextalignmentconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7B3DD3C-53C8-493D-B0BF-4A57BAF536FC}|ChatAI\\ChatAI.csproj|c:\\users\\admin\\desktop\\dam\\chatai\\chatai\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7B3DD3C-53C8-493D-B0BF-4A57BAF536FC}|ChatAI\\ChatAI.csproj|solutionrelative:chatai\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7B3DD3C-53C8-493D-B0BF-4A57BAF536FC}|ChatAI\\ChatAI.csproj|c:\\users\\admin\\desktop\\dam\\chatai\\chatai\\converters\\booltocolorconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7B3DD3C-53C8-493D-B0BF-4A57BAF536FC}|ChatAI\\ChatAI.csproj|solutionrelative:chatai\\converters\\booltocolorconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7B3DD3C-53C8-493D-B0BF-4A57BAF536FC}|ChatAI\\ChatAI.csproj|c:\\users\\admin\\desktop\\dam\\chatai\\chatai\\vistamodelo\\chatviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7B3DD3C-53C8-493D-B0BF-4A57BAF536FC}|ChatAI\\ChatAI.csproj|solutionrelative:chatai\\vistamodelo\\chatviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7B3DD3C-53C8-493D-B0BF-4A57BAF536FC}|ChatAI\\ChatAI.csproj|c:\\users\\admin\\desktop\\dam\\chatai\\chatai\\converters\\booltoalignmentconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7B3DD3C-53C8-493D-B0BF-4A57BAF536FC}|ChatAI\\ChatAI.csproj|solutionrelative:chatai\\converters\\booltoalignmentconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7B3DD3C-53C8-493D-B0BF-4A57BAF536FC}|ChatAI\\ChatAI.csproj|c:\\users\\admin\\desktop\\dam\\chatai\\chatai\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{C7B3DD3C-53C8-493D-B0BF-4A57BAF536FC}|ChatAI\\ChatAI.csproj|solutionrelative:chatai\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7B3DD3C-53C8-493D-B0BF-4A57BAF536FC}|ChatAI\\ChatAI.csproj|c:\\users\\admin\\desktop\\dam\\chatai\\chatai\\vistamodelo\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7B3DD3C-53C8-493D-B0BF-4A57BAF536FC}|ChatAI\\ChatAI.csproj|solutionrelative:chatai\\vistamodelo\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\AppData\\Local\\Temp\\.vsdbgsrc\\ee5cecc93d553594bcdd27f7f78ec4c027d563536bb5d0f2c4359be1479d5362\\XamlReader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7B3DD3C-53C8-493D-B0BF-4A57BAF536FC}|ChatAI\\ChatAI.csproj|c:\\users\\admin\\desktop\\dam\\chatai\\chatai\\modelo\\mensaje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7B3DD3C-53C8-493D-B0BF-4A57BAF536FC}|ChatAI\\ChatAI.csproj|solutionrelative:chatai\\modelo\\mensaje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7B3DD3C-53C8-493D-B0BF-4A57BAF536FC}|ChatAI\\ChatAI.csproj|c:\\users\\admin\\desktop\\dam\\chatai\\chatai\\modelo\\chatresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7B3DD3C-53C8-493D-B0BF-4A57BAF536FC}|ChatAI\\ChatAI.csproj|solutionrelative:chatai\\modelo\\chatresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7B3DD3C-53C8-493D-B0BF-4A57BAF536FC}|ChatAI\\ChatAI.csproj|c:\\users\\admin\\desktop\\dam\\chatai\\chatai\\commands\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7B3DD3C-53C8-493D-B0BF-4A57BAF536FC}|ChatAI\\ChatAI.csproj|solutionrelative:chatai\\commands\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7B3DD3C-53C8-493D-B0BF-4A57BAF536FC}|ChatAI\\ChatAI.csproj|c:\\users\\admin\\desktop\\dam\\chatai\\chatai\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7B3DD3C-53C8-493D-B0BF-4A57BAF536FC}|ChatAI\\ChatAI.csproj|solutionrelative:chatai\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7B3DD3C-53C8-493D-B0BF-4A57BAF536FC}|ChatAI\\ChatAI.csproj|c:\\users\\admin\\desktop\\dam\\chatai\\chatai\\styles\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{C7B3DD3C-53C8-493D-B0BF-4A57BAF536FC}|ChatAI\\ChatAI.csproj|solutionrelative:chatai\\styles\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7B3DD3C-53C8-493D-B0BF-4A57BAF536FC}|ChatAI\\ChatAI.csproj|c:\\users\\admin\\desktop\\dam\\chatai\\chatai\\chatai.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C7B3DD3C-53C8-493D-B0BF-4A57BAF536FC}|ChatAI\\ChatAI.csproj|solutionrelative:chatai\\chatai.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 365,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\DAM\\ChatAI\\ChatAI\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "ChatAI\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\DAM\\ChatAI\\ChatAI\\MainWindow.xaml",
+              "RelativeToolTip": "ChatAI\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-19T16:44:41.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\DAM\\ChatAI\\ChatAI\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "ChatAI\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\DAM\\ChatAI\\ChatAI\\MainWindow.xaml.cs",
+              "RelativeToolTip": "ChatAI\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T17:10:00.031Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BoolToMessageTailMarginConverter.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\DAM\\ChatAI\\ChatAI\\Converters\\BoolToMessageTailMarginConverter.cs",
+              "RelativeDocumentMoniker": "ChatAI\\Converters\\BoolToMessageTailMarginConverter.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\DAM\\ChatAI\\ChatAI\\Converters\\BoolToMessageTailMarginConverter.cs",
+              "RelativeToolTip": "ChatAI\\Converters\\BoolToMessageTailMarginConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T13:19:03.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BoolToColorConverter.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\DAM\\ChatAI\\ChatAI\\Converters\\BoolToColorConverter.cs",
+              "RelativeDocumentMoniker": "ChatAI\\Converters\\BoolToColorConverter.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\DAM\\ChatAI\\ChatAI\\Converters\\BoolToColorConverter.cs",
+              "RelativeToolTip": "ChatAI\\Converters\\BoolToColorConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T12:59:42.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BoolToTextAlignmentConverter.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\DAM\\ChatAI\\ChatAI\\Converters\\BoolToTextAlignmentConverter.cs",
+              "RelativeDocumentMoniker": "ChatAI\\Converters\\BoolToTextAlignmentConverter.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\DAM\\ChatAI\\ChatAI\\Converters\\BoolToTextAlignmentConverter.cs",
+              "RelativeToolTip": "ChatAI\\Converters\\BoolToTextAlignmentConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T12:45:34.251Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ChatViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\DAM\\ChatAI\\ChatAI\\VistaModelo\\ChatViewModel.cs",
+              "RelativeDocumentMoniker": "ChatAI\\VistaModelo\\ChatViewModel.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\DAM\\ChatAI\\ChatAI\\VistaModelo\\ChatViewModel.cs",
+              "RelativeToolTip": "ChatAI\\VistaModelo\\ChatViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAB6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T12:59:10.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BoolToMessageTailConverter.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\DAM\\ChatAI\\ChatAI\\Converters\\BoolToMessageTailConverter.cs",
+              "RelativeDocumentMoniker": "ChatAI\\Converters\\BoolToMessageTailConverter.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\DAM\\ChatAI\\ChatAI\\Converters\\BoolToMessageTailConverter.cs",
+              "RelativeToolTip": "ChatAI\\Converters\\BoolToMessageTailConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T13:07:08.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BoolToAlignmentConverter.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\DAM\\ChatAI\\ChatAI\\Converters\\BoolToAlignmentConverter.cs",
+              "RelativeDocumentMoniker": "ChatAI\\Converters\\BoolToAlignmentConverter.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\DAM\\ChatAI\\ChatAI\\Converters\\BoolToAlignmentConverter.cs",
+              "RelativeToolTip": "ChatAI\\Converters\\BoolToAlignmentConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T12:47:35.667Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ViewModelBase.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\DAM\\ChatAI\\ChatAI\\VistaModelo\\ViewModelBase.cs",
+              "RelativeDocumentMoniker": "ChatAI\\VistaModelo\\ViewModelBase.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\DAM\\ChatAI\\ChatAI\\VistaModelo\\ViewModelBase.cs",
+              "RelativeToolTip": "ChatAI\\VistaModelo\\ViewModelBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T12:59:35.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\DAM\\ChatAI\\ChatAI\\App.xaml",
+              "RelativeDocumentMoniker": "ChatAI\\App.xaml",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\DAM\\ChatAI\\ChatAI\\App.xaml",
+              "RelativeToolTip": "ChatAI\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-19T16:44:28.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "XamlReader.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\AppData\\Local\\Temp\\.vsdbgsrc\\ee5cecc93d553594bcdd27f7f78ec4c027d563536bb5d0f2c4359be1479d5362\\XamlReader.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\ee5cecc93d553594bcdd27f7f78ec4c027d563536bb5d0f2c4359be1479d5362\\XamlReader.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\AppData\\Local\\Temp\\.vsdbgsrc\\ee5cecc93d553594bcdd27f7f78ec4c027d563536bb5d0f2c4359be1479d5362\\XamlReader.cs [Solo lectura]",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\ee5cecc93d553594bcdd27f7f78ec4c027d563536bb5d0f2c4359be1479d5362\\XamlReader.cs [Solo lectura]",
+              "ViewState": "AgIAAOkBAAAAAAAAAADwv/4BAAACAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T12:44:23.661Z",
+              "EditorCaption": " [Solo lectura]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ChatResponse.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\DAM\\ChatAI\\ChatAI\\Modelo\\ChatResponse.cs",
+              "RelativeDocumentMoniker": "ChatAI\\Modelo\\ChatResponse.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\DAM\\ChatAI\\ChatAI\\Modelo\\ChatResponse.cs",
+              "RelativeToolTip": "ChatAI\\Modelo\\ChatResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T12:59:39.303Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Mensaje.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\DAM\\ChatAI\\ChatAI\\Modelo\\Mensaje.cs",
+              "RelativeDocumentMoniker": "ChatAI\\Modelo\\Mensaje.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\DAM\\ChatAI\\ChatAI\\Modelo\\Mensaje.cs",
+              "RelativeToolTip": "ChatAI\\Modelo\\Mensaje.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T12:59:40.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RelayCommand.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\DAM\\ChatAI\\ChatAI\\Commands\\RelayCommand.cs",
+              "RelativeDocumentMoniker": "ChatAI\\Commands\\RelayCommand.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\DAM\\ChatAI\\ChatAI\\Commands\\RelayCommand.cs",
+              "RelativeToolTip": "ChatAI\\Commands\\RelayCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAiwBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T12:59:45.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\DAM\\ChatAI\\ChatAI\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "ChatAI\\AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\DAM\\ChatAI\\ChatAI\\AssemblyInfo.cs",
+              "RelativeToolTip": "ChatAI\\AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T12:07:35.512Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Styles.xaml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\DAM\\ChatAI\\ChatAI\\Styles\\Styles.xaml",
+              "RelativeDocumentMoniker": "ChatAI\\Styles\\Styles.xaml",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\DAM\\ChatAI\\ChatAI\\Styles\\Styles.xaml",
+              "RelativeToolTip": "ChatAI\\Styles\\Styles.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-19T18:03:10.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ChatAI.csproj",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\DAM\\ChatAI\\ChatAI\\ChatAI.csproj",
+              "RelativeDocumentMoniker": "ChatAI\\ChatAI.csproj",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\DAM\\ChatAI\\ChatAI\\ChatAI.csproj",
+              "RelativeToolTip": "ChatAI\\ChatAI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-18T12:59:03.856Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 24,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
