@@ -1,4 +1,5 @@
-﻿using ChatAI.VistaModelo;
+﻿using ChatAI.Modelo;
+using ChatAI.VistaModelo;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -22,5 +23,16 @@ namespace ChatAI
             InitializeComponent();
             DataContext = new ChatViewModel();
         }
+
+		private void TextBlock_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+		{
+			if (sender is TextBlock textBlock && textBlock.DataContext is Mensaje mensaje)
+			{
+				if (DataContext is ChatViewModel viewModel && viewModel.LeerMensajeCommand.CanExecute(mensaje))
+				{
+					viewModel.LeerMensajeCommand.Execute(mensaje);
+				}
+			}
+		}
 	}
 }

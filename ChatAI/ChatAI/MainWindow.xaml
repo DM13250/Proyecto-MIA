@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ChatAI"
         mc:Ignorable="d"
-        Title="ChatAI" Height="450" Width="800"
+        Title="ChatAI" WindowState="Maximized"
 		Style="{StaticResource MainWindowStyle}">
 	<Window.Resources>
 		<ResourceDictionary>
@@ -63,12 +63,10 @@
                         Grid.Column="1">
 							<!-- Flecha -->
 							<StackPanel Orientation="Vertical">
-								<!-- Triángulo ("pico" del mensaje) -->
-
 								<!-- Texto del mensaje -->
 								<TextBlock Text="{Binding Contenido}"
                                    TextWrapping="Wrap"
-                                   TextAlignment="{Binding EsUsuario, Converter={StaticResource BoolToTextAlignmentConverter}}"/>
+                                   TextAlignment="{Binding EsUsuario, Converter={StaticResource BoolToTextAlignmentConverter}}" MouseLeftButtonDown="TextBlock_MouseLeftButtonDown"/>
 							</StackPanel>
 						</Border>
 					</Grid>
@@ -82,6 +80,7 @@
 			<Grid.ColumnDefinitions>
 				<ColumnDefinition Width="*" />
 				<ColumnDefinition Width="Auto" />
+				<ColumnDefinition Width="Auto" />
 			</Grid.ColumnDefinitions>
 			<Path Data="{Binding EsUsuario, Converter={StaticResource BoolToMessageTailConverter}}"
                               Fill="{Binding EsUsuario, Converter={StaticResource BoolToColorConverter}}"
@@ -93,6 +92,12 @@
 					 Height="25"
                      Margin="0,0,10,0"/>
 			<Button Grid.Column="1" 
+					Content="🎤"
+					Width="30"
+					Height="30"
+					Command="{Binding GrabarVozCommand}"
+					Style="{StaticResource RoundedButtonStyle}"/>
+			<Button Grid.Column="2" 
                     Content="Enviar"
                     Command="{Binding EnviarMensajeCommand}"
                     IsEnabled="{Binding PuedeEnviar}"
