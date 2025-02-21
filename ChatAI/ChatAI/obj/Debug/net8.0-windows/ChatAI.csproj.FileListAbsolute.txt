@@ -43,3 +43,7 @@ C:\Users\ADMIN\Desktop\DAM\ChatAI\ChatAI\obj\Debug\net8.0-windows\ChatAI.pdb
 C:\Users\ADMIN\Desktop\DAM\ChatAI\ChatAI\obj\Debug\net8.0-windows\ChatAI.genruntimeconfig.cache
 C:\Users\ADMIN\Desktop\DAM\ChatAI\ChatAI\obj\Debug\net8.0-windows\ref\ChatAI.dll
 C:\Users\ADMIN\Desktop\DAM\ChatAI\ChatAI\obj\Debug\net8.0-windows\Styles\Styles.baml
+C:\Users\ADMIN\Desktop\DAM\ChatAI\ChatAI\obj\Debug\net8.0-windows\ChatAI.csproj.AssemblyReference.cache
+C:\Users\ADMIN\Desktop\DAM\ChatAI\ChatAI\bin\Debug\net8.0-windows\System.Speech.dll
+C:\Users\ADMIN\Desktop\DAM\ChatAI\ChatAI\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Speech.dll
+C:\Users\ADMIN\Desktop\DAM\ChatAI\ChatAI\obj\Debug\net8.0-windows\ChatAI.csproj.Up2Date

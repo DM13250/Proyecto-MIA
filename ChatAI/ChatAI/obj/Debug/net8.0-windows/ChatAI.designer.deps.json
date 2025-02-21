@@ -5,7 +5,32 @@
   },
   "compilationOptions": {},
   "targets": {
-    ".NETCoreApp,Version=v8.0": {}
+    ".NETCoreApp,Version=v8.0": {
+      "System.Speech/9.0.2": {
+        "runtime": {
+          "lib/net8.0/System.Speech.dll": {
+            "assemblyVersion": "9.0.0.2",
+            "fileVersion": "9.0.225.6610"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net8.0/System.Speech.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "9.0.0.2",
+            "fileVersion": "9.0.225.6610"
+          }
+        }
+      }
+    }
   },
-  "libraries": {}
+  "libraries": {
+    "System.Speech/9.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-arQPudYrkW+cZfF7qyKcv9ukR7lM54AKyQDPX/2RPrC1EFlkYWHeOI6ST6VeI8hefW4zH9f/FnThuC70LFNd9A==",
+      "path": "system.speech/9.0.2",
+      "hashPath": "system.speech.9.0.2.nupkg.sha512"
+    }
+  }
 }
