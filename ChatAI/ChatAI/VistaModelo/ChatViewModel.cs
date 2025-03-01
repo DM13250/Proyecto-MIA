@@ -21,6 +21,11 @@ namespace ChatAI.VistaModelo
 		private string _texto;
 		private bool _puedeEnviar;
 		private readonly SpeechSynthesizer _sintetizador = new(); // 🔹 Agregamos el sintetizador de voz
+		public bool HayTexto => !string.IsNullOrWhiteSpace(Texto);
+		
+		// Propiedades para controlar la visibilidad de los botones
+		public bool MostrarMicrofono => string.IsNullOrWhiteSpace(Texto);
+		public bool MostrarEnviar => !string.IsNullOrWhiteSpace(Texto);
 
 		public ObservableCollection<Mensaje> Mensajes { get; } = new();
 
@@ -50,7 +55,10 @@ namespace ChatAI.VistaModelo
 				{
 					_texto = value;
 					OnPropertyChanged();
-					PuedeEnviar = !string.IsNullOrWhiteSpace(_texto);
+					OnPropertyChanged(nameof(HayTexto));
+					OnPropertyChanged(nameof(MostrarMicrofono));
+					OnPropertyChanged(nameof(MostrarEnviar));
+					PuedeEnviar = HayTexto;
 					((RelayCommand)EnviarMensajeCommand).RaiseCanExecuteChanged();
 				}
 			}
@@ -142,6 +150,14 @@ namespace ChatAI.VistaModelo
 				_sintetizador.SpeakAsync(mensaje.Contenido);
 			}
 		}
+
+		public void LimpiarConversacion()
+		{
+			Mensajes.Clear(); // 🔹 Borra los mensajes visibles en la UI
+			messages.Clear(); // 🔹 Borra la memoria de la IA
+			messages.Add(new { content = "Hola Hola saludos cordiales. Soy Llama el asistente de esta épica conversación.", role = "system" });
+		}
+
 
 	}
 }

@@ -5,7 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ChatAI"
         mc:Ignorable="d"
-        Title="ChatAI" WindowState="Maximized"
+        Title="ChatAI" 
+        WindowState="Maximized"
+		WindowStyle="None"
 		Style="{StaticResource MainWindowStyle}">
 	<Window.Resources>
 		<ResourceDictionary>
@@ -15,93 +17,218 @@
 		</ResourceDictionary>
 	</Window.Resources>
 
-	<Grid Margin="0, 0, 0, 10">
+	<Grid>
 		<Grid.RowDefinitions>
 			<RowDefinition Height="auto"/>
-			<RowDefinition Height="*" />
-			<RowDefinition Height="Auto" />
+			<RowDefinition Height="*"/>
 		</Grid.RowDefinitions>
-		<StackPanel Background="Blue" Height="50">
-			<Button Background="Transparent" BorderBrush="White"
-			Content=":"
-			Width="20"/>
-		</StackPanel>
 
-		<!-- Lista de Mensajes -->
-		<ListBox Grid.Row="1" ItemsSource="{Binding Mensajes}" 
-         Margin="0,0,0,10" Background="Transparent" BorderBrush="Transparent"
-         ScrollViewer.VerticalScrollBarVisibility="Auto">
-			<ListBox.ItemTemplate>
-				<DataTemplate>
-					<Grid Margin="5">
-						<Grid.ColumnDefinitions>
-							<ColumnDefinition Width="Auto"/>
-							<!-- Para la imagen del usuario -->
-							<ColumnDefinition Width="*"/>
-							<!-- Para el mensaje -->
-						</Grid.ColumnDefinitions>
+		<!-- Barra superior -->
+		<Border Background="#6d42ea" Effect="{StaticResource ShadowEffect}">
+			<Grid Height="56">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="Auto"/>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="Auto"/>
+				</Grid.ColumnDefinitions>
 
-						<!-- Imagen del Usuario -->
-						<!--Image Source="{Binding Avatar}"
-                       Width="40" Height="40"
-                       Margin="5"
-                       ClipToBounds="True"
-                       Stretch="UniformToFill"
-                       VerticalAlignment="Top"
-                       Grid.Column="{Binding EsUsuario, Converter={StaticResource BoolToAvatarAlignmentConverter}}"
-                       Style="{StaticResource CircularImageStyle}" -->
+				<!-- Logo y título -->
+				<TextBlock Text="Proyecto MIA" 
+						 Grid.Column="0"
+						 Margin="20,0" 
+						 VerticalAlignment="Center" 
+						 Foreground="White" 
+						 FontWeight="Bold" 
+						 FontSize="24"/>
 
-						<!-- Contenedor del Mensaje -->
-						<!-- Flecha -->
-						<Path Stroke="{Binding EsUsuario, Converter={StaticResource BoolToColorConverter}}" StrokeThickness="3"  
-							  Fill="{Binding EsUsuario, Converter={StaticResource BoolToColorConverter}}"
-							  Data="M 0,10 L 10,10 L 10, 10 Z" Margin="20, 12, 0, 0"/>
-						<Border Background="{Binding EsUsuario, Converter={StaticResource BoolToColorConverter}}"
-                        CornerRadius="10"
-                        MaxWidth="300"
-                        Padding="12,8,12,8"
-                        Grid.Column="1">
-							<!-- Flecha -->
-							<StackPanel Orientation="Vertical">
-								<!-- Texto del mensaje -->
-								<TextBlock Text="{Binding Contenido}"
-                                   TextWrapping="Wrap"
-                                   TextAlignment="{Binding EsUsuario, Converter={StaticResource BoolToTextAlignmentConverter}}" MouseLeftButtonDown="TextBlock_MouseLeftButtonDown"/>
-							</StackPanel>
-						</Border>
-					</Grid>
-				</DataTemplate>
-			</ListBox.ItemTemplate>
-		</ListBox>
+				<!-- Botones de control de ventana -->
+				<StackPanel Grid.Column="2" 
+							Orientation="Horizontal" 
+							HorizontalAlignment="Right">
+					<Button x:Name="BtnMinimize" 
+							Style="{StaticResource WindowControlButtonStyle}"
+							Click="BtnMinimize_Click">
+						<Path Data="M0,0 L8,0" 
+							  Stroke="White" 
+							  StrokeThickness="1"/>
+					</Button>
+					<Button x:Name="BtnClose" 
+							Style="{StaticResource WindowControlButtonStyle}"
+							Click="BtnClose_Click">
+						<Path Data="M0,0 L8,8 M8,0 L0,8" 
+							  Stroke="White" 
+							  StrokeThickness="1"/>
+					</Button>
+				</StackPanel>
+			</Grid>
+		</Border>
 
-
-		<!-- Controles de Entrada -->
-		<Grid Grid.Row="2" Margin="10">
+		<!-- Contenido principal -->
+		<Grid Grid.Row="1">
 			<Grid.ColumnDefinitions>
-				<ColumnDefinition Width="*" />
-				<ColumnDefinition Width="Auto" />
-				<ColumnDefinition Width="Auto" />
+				<ColumnDefinition Width="300"/>
+				<ColumnDefinition Width="*"/>
 			</Grid.ColumnDefinitions>
-			<Path Data="{Binding EsUsuario, Converter={StaticResource BoolToMessageTailConverter}}"
-                              Fill="{Binding EsUsuario, Converter={StaticResource BoolToColorConverter}}"
-                              Width="10" Height="10"
-                              VerticalAlignment="Center"/>
-			<TextBox Grid.Column="0" 
-                     Text="{Binding Texto, UpdateSourceTrigger=PropertyChanged}" 
-                     Style="{StaticResource RoundedTextBoxStyle}" 
-					 Height="25"
-                     Margin="0,0,10,0"/>
-			<Button Grid.Column="1" 
-					Content="🎤"
-					Width="30"
-					Height="30"
-					Command="{Binding GrabarVozCommand}"
-					Style="{StaticResource RoundedButtonStyle}"/>
-			<Button Grid.Column="2" 
-                    Content="Enviar"
-                    Command="{Binding EnviarMensajeCommand}"
-                    IsEnabled="{Binding PuedeEnviar}"
-                    Style="{StaticResource RoundedButtonStyle}"/>
+
+			<!-- Panel lateral -->
+			<Border Background="#1a1a1a" Effect="{StaticResource ShadowEffect}">
+				<Grid>
+					<Grid.RowDefinitions>
+						<RowDefinition Height="Auto"/>
+						<RowDefinition Height="*"/>
+						<RowDefinition Height="Auto"/>
+					</Grid.RowDefinitions>
+
+					<!-- Información del usuario -->
+					<Border Grid.Row="0" 
+							Background="#252525" 
+							Padding="20">
+						<TextBlock Text="¡Bienvenido Gregorio Prieto!" 
+								 Foreground="White" 
+								 FontWeight="SemiBold" 
+								 FontSize="18" 
+								 TextWrapping="Wrap"/>
+					</Border>
+
+					<!-- Botones de acción -->
+					<StackPanel Grid.Row="1" Margin="15">
+						<Button x:Name="btnAnnadir" 
+								Style="{StaticResource ActionButtonStyle}"
+								Click="NuevaConversacion_Click">
+							<StackPanel Orientation="Horizontal">
+								<Path Data="M0,8 H16 M8,0 V16" 
+									  Stroke="White" 
+									  StrokeThickness="2" 
+									  Margin="0,0,10,0"/>
+								<TextBlock Text="Nuevo Chat" 
+										 Foreground="White"/>
+							</StackPanel>
+						</Button>
+
+						<Button Style="{StaticResource ActionButtonStyle}"
+								Click="NuevaConversacion_Click"
+								Margin="0,10,0,0">
+							<StackPanel Orientation="Horizontal">
+								<Path Data="M8,0 A8,8 0 1 0 8,16 A8,8 0 1 0 8,0 M8,6 V12 M8,4 V5" 
+									  Stroke="White" 
+									  StrokeThickness="2" 
+									  Margin="0,0,10,0"/>
+								<TextBlock Text="Ayuda" 
+										 Foreground="White"/>
+							</StackPanel>
+						</Button>
+					</StackPanel>
+
+					<!-- Pie de página -->
+					<TextBlock Grid.Row="2" 
+							 Text="© 2025 ProyectoMIA - Versión 1.0" 
+							 Margin="20,10" 
+							 Foreground="#808080" 
+							 FontSize="12" 
+							 TextAlignment="Center"/>
+				</Grid>
+			</Border>
+
+			<!-- Área de chat -->
+			<Border Grid.Column="1" 
+					Background="#f8f9fa" 
+					Margin="2,0,0,0">
+				<Grid>
+					<Grid.RowDefinitions>
+						<RowDefinition Height="*"/>
+						<RowDefinition Height="Auto"/>
+					</Grid.RowDefinitions>
+
+					<!-- Lista de mensajes -->
+					<ListBox ItemsSource="{Binding Mensajes}"
+							 Margin="20"
+							 Background="Transparent"
+							 BorderBrush="Transparent"
+							 ScrollViewer.VerticalScrollBarVisibility="Auto">
+						<ListBox.ItemTemplate>
+							<DataTemplate>
+								<Grid Margin="5">
+									<DockPanel Grid.Column="0" 
+											  LastChildFill="True"
+											  HorizontalAlignment="{Binding EsUsuario, Converter={StaticResource BoolToAlignmentConverter}}">
+										
+										<!-- Botón de sonido para mensajes del usuario (izquierda) -->
+										<Button x:Name="BtnListenUser" 
+												Style="{StaticResource AudioButtonStyle}"
+												DockPanel.Dock="Left"
+												Click="BtnListen_Click" 
+												DataContext="{Binding}"
+												Visibility="{Binding EsUsuario, Converter={StaticResource BoolToVisibilityConverter}}">
+											<Image Source="Images/UnmutePurple.png" Width="20" Height="20"/>
+										</Button>
+
+										<!-- Mensaje -->
+										<Border Background="{Binding EsUsuario, Converter={StaticResource BoolToColorConverter}}"
+												CornerRadius="18"
+												MaxWidth="600"
+												Padding="20,12"
+												Margin="8,0"
+												Effect="{StaticResource MessageShadowEffect}">
+											<TextBlock Text="{Binding Contenido}"
+													 TextWrapping="Wrap"
+													 Foreground="{Binding EsUsuario, Converter={StaticResource BoolToForegroundConverter}}"/>
+										</Border>
+
+										<!-- Botón de sonido para mensajes de la IA (derecha) -->
+										<Button x:Name="BtnListen" 
+												Style="{StaticResource AudioButtonStyle}"
+												DockPanel.Dock="Right"
+												Click="BtnListen_Click" 
+												DataContext="{Binding}"
+												Visibility="{Binding EsUsuario, Converter={StaticResource InverseBoolToVisibilityConverter}}">
+											<Image Source="Images/UnmutePurple.png" Width="20" Height="20"/>
+										</Button>
+									</DockPanel>
+								</Grid>
+							</DataTemplate>
+						</ListBox.ItemTemplate>
+					</ListBox>
+
+					<!-- Área de entrada -->
+					<Border Grid.Row="1" 
+							Background="White" 
+							Padding="20,15" 
+							Effect="{StaticResource ShadowEffect}">
+						<Grid>
+							<Grid.ColumnDefinitions>
+								<ColumnDefinition Width="*"/>
+								<ColumnDefinition Width="Auto"/>
+							</Grid.ColumnDefinitions>
+
+							<TextBox Grid.Column="0" 
+									 Text="{Binding Texto, UpdateSourceTrigger=PropertyChanged}" 
+									 Style="{StaticResource RoundedTextBoxStyle}" 
+									 Margin="0,0,10,0"
+									 KeyDown="TextBox_KeyDown"/>
+
+							<!-- Botón del micrófono -->
+							<Button Grid.Column="1" 
+									x:Name="BtnMicrofono"
+									Command="{Binding GrabarVozCommand}"
+									Style="{StaticResource IconButtonStyle}"
+									Background="{Binding EstaGrabando, Converter={StaticResource BoolToRecordingColorConverter}}"
+									Visibility="{Binding MostrarMicrofono, Converter={StaticResource BooleanToVisibilityConverter}}">
+								<Image Source="{Binding EstaGrabando, Converter={StaticResource BoolToMicrophoneIconConverter}}" 
+									   Width="20" Height="20"/>
+							</Button>
+
+							<!-- Botón de enviar -->
+							<Button Grid.Column="1" 
+									x:Name="BtnEnviar"
+									Command="{Binding EnviarMensajeCommand}"
+									Style="{StaticResource IconButtonStyle}"
+									Visibility="{Binding MostrarEnviar, Converter={StaticResource BooleanToVisibilityConverter}}">
+								<Image Source="Images/Paper Plane.png" Width="20" Height="20"/>
+							</Button>
+						</Grid>
+					</Border>
+				</Grid>
+			</Border>
 		</Grid>
 	</Grid>
 </Window>

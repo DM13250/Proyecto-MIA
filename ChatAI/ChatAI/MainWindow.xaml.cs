@@ -1,15 +1,9 @@
 ﻿using ChatAI.Modelo;
-using ChatAI.VistaModelo;
-using System.Text;
+using ChatAI.ViewModels;
+using System.Collections.ObjectModel;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace ChatAI
 {
@@ -21,18 +15,47 @@ namespace ChatAI
         public MainWindow()
         {
             InitializeComponent();
-            DataContext = new ChatViewModel();
+            DataContext = new MainViewModel();
         }
 
-		private void TextBlock_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
-		{
-			if (sender is TextBlock textBlock && textBlock.DataContext is Mensaje mensaje)
-			{
-				if (DataContext is ChatViewModel viewModel && viewModel.LeerMensajeCommand.CanExecute(mensaje))
-				{
-					viewModel.LeerMensajeCommand.Execute(mensaje);
-				}
-			}
-		}
-	}
+        private void NuevaConversacion_Click(object sender, RoutedEventArgs e)
+        {
+            if (DataContext is MainViewModel viewModel)
+            {
+                viewModel.Mensajes.Clear();
+            }
+        }
+
+        private void BtnClose_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
+
+        private void BtnMinimize_Click(object sender, RoutedEventArgs e)
+        {
+            this.WindowState = WindowState.Minimized;
+        }
+
+        private void BtnListen_Click(object sender, RoutedEventArgs e)
+        {
+            if (sender is Button button && 
+                button.DataContext is Mensaje mensaje && 
+                DataContext is MainViewModel viewModel)
+            {
+                viewModel.LeerMensaje(mensaje);
+            }
+        }
+
+        private void TextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter && DataContext is MainViewModel viewModel)
+            {
+                if (viewModel.MostrarEnviar) // Solo enviar si el botón de enviar está visible
+                {
+                    viewModel.EnviarMensajeCommand.Execute(null);
+                    e.Handled = true; // Evitar que se agregue un salto de línea
+                }
+            }
+        }
+    }
 }

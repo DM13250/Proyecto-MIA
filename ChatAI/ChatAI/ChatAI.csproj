@@ -9,7 +9,49 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Images\Close.png" />
+    <None Remove="Images\microphone.png" />
+    <None Remove="Images\mute.png" />
+    <None Remove="Images\Paper Plane.png" />
+    <None Remove="Images\Unmute.png" />
+    <None Remove="Images\UnmutePurple.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="System.Speech" Version="9.0.2" />
+    <PackageReference Include="NAudio" Version="2.2.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Vosk" Version="0.3.38" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\Close.png" />
+    <Resource Include="Images\microphone.png" />
+    <Resource Include="Images\mute.png" />
+    <Resource Include="Images\Paper Plane.png" />
+    <Resource Include="Images\Unmute.png" />
+    <Resource Include="Images\UnmutePurple.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Vosk\**">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
 
 </Project>
